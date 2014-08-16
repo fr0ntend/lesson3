@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>javascript練習</title>
+  </head>
+  <body>
+    <div id="main">
+      <ul>
+        <li><a href='#' onclick='sayHello()'>點我1</a></li>
+        <li><a href='#' onclick="alert('我是2,謝謝點我')">點我2</a></li>
+        <li><a href='#' id='click'>點我3</a></li>
+      </ul>
+    </div>
+    <script type='text/javascript'>
+      function sayHello(){
+        alert('我是1,謝謝點我');
+      }
+      document.getElementById('click').addEventListener('click',function(){
+        alert('我是3,謝謝點我');
+      });
+    </script>
+  </body>
+</html>

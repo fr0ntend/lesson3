@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>jQuery Event練習</title>
+    <link rel="stylesheet" type='text/css' href='style.css'>
+    <script type='text/javascript' src='jquery-1.11.1.min.js'></script>
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        /* 填入click */
+        $('#clickMe').on('..',function(){
+          alert('clicked!');
+        });
+        /* 改用mouseenter mouseout*/
+        /* 裡面改加fadeOut */
+        /* div 裡面把click me改成clicked */
+
+      });
+    </script>
+  </head>
+  <body>
+    <div id="clickMe">Click Me</div>
+  </body>
+</html>

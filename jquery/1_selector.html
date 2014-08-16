@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>jQuery Selector練習</title>
+    <link rel="stylesheet" type='text/css' href='style.css'>
+    <script type='text/javascript' src='jquery-1.11.1.min.js'></script>
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        /* 按照ID行為決定下面的jQuery執行*/
+        $().css('background', 'black');
+        $().fadeOut(1000);
+        /* 在afterMe多製造3個div*/
+        for(var i =0;i<3; i++) {
+          $().after('<div></div>');
+        }
+
+      });
+    </script>
+  </head>
+  <body>
+    <div id="makeMeBlack"></div>
+    <div id="fadeOutMe"></div>
+    <div class="afterMe"></div>
+  </body>
+</html>

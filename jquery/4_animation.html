@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <title>jQuery Event練習</title>
+    <link rel="stylesheet" type='text/css' href='style.css'>
+    <script type='text/javascript' src='jquery-1.11.1.min.js'></script>
+    <script type='text/javascript'>
+      $(document).ready(function(){
+        $('#toLeft').click(function(){
+          $('#toLeft').animate({
+              left: '...'
+            },
+            speed, function() {
+            /* stuff to do after animation is complete */
+            alert('animation completed!');
+          });
+
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+    <div id="toLeft">Click Me To Left 40px</div>
+  </body>
+</html>
